@@ -1,8 +1,8 @@
 
-//import io.restassured.ResAssured;
 import static io.restassured.RestAssured.given;
 
 import io.restassured.RestAssured;
+//import io.restassured.RestAssured;
 
 public class basic {
 
