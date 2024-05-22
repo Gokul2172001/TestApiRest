@@ -7,8 +7,7 @@ import io.restassured.RestAssured;
 public class basic {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		RestAssured.baseURI = "https://rahulshettyacademy.com";
 		given().queryParam("key", "qaclick123").header("Content-Type", "application/json")
 				.body("{\r\n" + "    \"location\": {\r\n" + "        \"lat\": -38.383494,\r\n"
