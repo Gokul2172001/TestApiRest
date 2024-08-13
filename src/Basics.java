@@ -1,4 +1,3 @@
-
 import static io.restassured.RestAssured.given;
 //import io.restassured.RestAssured;
 import static org.hamcrest.Matchers.equalTo;
@@ -17,6 +16,7 @@ public class Basics {
 				.body(payload.AddPlace()).when().post("maps/api/place/add/json").then().statusCode(200)
 				.body("scope", equalTo("APP")).header("Server", "Apache/2.4.52 (Ubuntu)").extract().response()
 				.asString();
+		
 		System.out.println(response);
 		JsonPath js = new JsonPath(response);
 
