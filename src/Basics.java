@@ -29,7 +29,8 @@ public class Basics {
 
 		System.out.println(placeId);
 
-		given().queryParam("Key", "qack").and().body("")
+		given().queryParam("Key", "qack").and().body("").header("","").body((payload.AddPlace())
+				.lastIndexOf("").
 	}
 
 }
