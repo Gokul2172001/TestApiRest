@@ -17,9 +17,11 @@ public class Basics {
 				.asString();
 
 		System.out.println(response);
+		
 		JsonPath js = new JsonPath(response);
 
 		String placeId = js.getString("place_id");
+		
 		System.out.println(placeId);
 
 		given().queryParam("key", "qaclick123").header("Content-Type", "application/json").body(payload.AddPlace())
