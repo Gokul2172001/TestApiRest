@@ -28,6 +28,7 @@ public class Basics {
 				.header("Server", "Apache/2.4.52 (Ubuntu)").extract().response().asString();
 		
 		System.out.println(placeId);
+		s
 	}
 
 }
